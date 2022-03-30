@@ -1,0 +1,49 @@
+function check()
+{
+	var ht = f.HoVaTen.value;
+	var dc= f.DiaChi.value;
+	var em = f.Email.value;
+	var dt = f.DienThoai.value;
+	
+	var emRegExp = //
+	var dtRegExp =
+	
+	if(ht == '')
+	{
+		alert('Họ tên không được bỏ trống!')
+		return false;
+	}
+	
+	if(dc == '')
+	{
+		alert('Địa chỉ không được bỏ trống!')
+		return false;
+	}
+	
+	if(em == '')
+	{
+		alert('Email không được bỏ trống!')
+		return false;
+	}
+	
+	if(dt == '')
+	{
+		alert('Điện thoại không được bỏ trống!')
+		return false;
+	}
+	
+	if(!emRegExp.test(em))
+	{
+		alert('Email không hợp lệ.');
+		return false;
+	}
+	
+	if(!dtRegExp.test(dt))
+	{
+		alert('Điện thoại không hợp lệ.');
+		return false;
+	}	
+	
+	return true;
+	
+}
